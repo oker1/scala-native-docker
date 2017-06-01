@@ -26,7 +26,7 @@ RUN \
   dpkg -i sbt-$SBT_VERSION.deb && \
   rm sbt-$SBT_VERSION.deb && \
   apt-get update && \
-  apt-get install -y clang libgc-dev libunwind-dev libre2-dev && \
+  apt-get install -y clang-3.8 libgc-dev libunwind-dev libre2-dev && \
   sbt sbtVersion
 
 # Define working directory
